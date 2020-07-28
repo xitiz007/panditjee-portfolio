@@ -1,0 +1,22 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container blogs">
+    <div class="blockquote text-center">
+        <h1>ब्लग खण्ड</h1>
+        <h2>हामी संग अहिले मात्र {{instances.count}} ओटा ब्लग छ</h2>
+    </div>
+    <ul>
+        {% for instance in instances %}
+        <p>
+            <li>
+                <h1 class="title-heading">{{instance.title}} <span class="badge badge-secondary">नयाँ</span></h1>
+                <h2 class="blockquote-footer">{{instance.date|date:"M j Y"|upper}}</h2>
+                <h3>{{instance.description|truncatechars:100}}</h3>
+                <a href="{% url 'blog:detail' instance.id %}">पुरा पढ्नुहोस्....</a>
+            </li>
+        </p>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

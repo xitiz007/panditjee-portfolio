@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+<div class="container blog-detail">
+    <a href="{% url 'blog:all_blog' %}">फिर्ता...</a>
+    <h1>{{instance.title}}</h1>
+    <h2>--{{instance.date|date:"F j Y"}}--</h2>
+    <h3>{{instance.description}}</h3>
+</div>
+{% endblock %}

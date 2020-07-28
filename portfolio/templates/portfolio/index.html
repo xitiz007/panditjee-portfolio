@@ -1,0 +1,202 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--  ======================= Start Banner Area =======================  -->
+<main class="site-main">
+    <section class="site-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">नमस्ते</h3>
+                    <h1 class="title-text text-uppercase">म बिबेक पण्डित</h1>
+                    <h4 class="title-text text-uppercase">ज्योतिष विज्ञ</h4>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                                me</button>
+                            <button type="button" class="btn button secondary-button text-uppercase"
+                                onclick="window.location.href='{% static 'portfolio/resume/Resume.pdf' %}';">बायो
+                                डाटा</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="{% static 'portfolio/images/cover.jpg' %}" alt="banner-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  ======================= End Banner Area =======================  -->
+
+    <!--  ========================= About Area ==========================  -->
+    <a name="intro"></a>
+    <section class="about-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-image">
+                        <img src="{% static 'portfolio/images/bibek-pandit.jpg' %}" alt="About us" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">
+                        <span>पहिला</span>
+                        <span>आफ्नो परिचय</span>
+                        <span>दिन्छु</span>
+                    </h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            नमस्कार म बिबेक पण्डित। मेरो उमेर २१ वर्ष हो। मेरो घर सिमौलचौर, पोखरा हो। मेरो जन्म रुपाकोट,
+                            पोखरामा भएको ह।
+                        </p>
+                        <p class="para">
+                            मेरो हजुरबुवा पुजारी भएको कारणले म उहाको काम बाट प्रेरित भएर मैले पनि पण्डित बन्नको लागि
+                            चाहिनी सम्पूर्ण ज्ञान सिके।
+                            नेपालमा सबै जसो पण्डितहरु पढे नलेखहेको भएको कारणले मैले ईन्जिनियरइंग पदने सोचे र अहिले म
+                            कम्प्युटर ईन्जिनियरइंग पड्दै छ।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ========================= End About Area ==========================  -->
+
+    <!--  ====================== Start Services Area =============================  -->
+
+    <a name="services"></a>
+    <section class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center services-title">
+                    <h1 class="text-uppercase title-text">सेवा सुबिदाहरु</h1>
+                    <p class="para">
+                        ग्राहकको खुसि नै हाम्रो खुसि हो तेसैले बिगत ५ वर्ष देखि हाम्ले ग्राहकलाई सुपत मूल्यमा गुदस्तरिय
+                        सेवा दिदै आएका छौ।
+                    </p>
+                </div>
+            </div>
+            <div class="container services-list">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="{% static 'portfolio/images/wedding.png' %}" alt="Services-1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">बिबाह</h5>
+                                <p class="card-text text-secondary">
+                                    बिबाहको लागि पण्डित आवश्यक परेको खण्डमा हामीलाई सम्झनु होस्।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="{% static 'portfolio/images/bald.png' %}" alt="Services-2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">बर्तबन्द</h5>
+                                <p class="card-text text-secondary">
+                                    बर्तबन्द लागि पण्डित आवश्यक परेको खण्डमा हामीलाई सम्झनु होस्।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="{% static 'portfolio/images/future.png' %}" alt="Services-3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">भविष्य हेराउनी</h5>
+                                <p class="card-text text-secondary">
+                                    तपाईलाई आफ्नो अथवा कसैको भविष्य हेराउनु परेमा हामीलाई सम्झनुहोस।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="{% static 'portfolio/images/magic.png' %}" alt="Services-4">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">अन्य</h5>
+                                <p class="card-text text-secondary">
+                                    सबै पुजा पाठ सम्बंदी पनि हामी सेवा दिन्क्ष।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ====================== End Services Area =============================  -->
+
+    <!--  ======================== Client Area ==============================  -->
+    <a name="client"></a>
+    <section class="about-area">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="about-title">
+                        <h1 class="text-uppercase title-h1">ग्राहकको प्रतिक्रिया मेरो काम प्रति</h1>
+                        <p class="para">
+                            केहि प्रतिक्रियाहरु छन् मेरा आदरणीय ग्राहक महानुभाब बाट मेरो काम प्रति। ग्राहकको सन्तुष्टिनै मेरो सन्तुष्टि ह।
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container carousel py-lg-5">
+            <div class="owl-carousel owl-theme">
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="{% static 'portfolio/images/maili.jpg' %}" alt="img1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">सुरक्ष्या अधिकारी</h4>
+                        <p class="para">मेरो भाईको बर्तबन्द सस्तो, भर पर्दो, गुदस्तरिय र सुपत मूल्यमा गरिदिनु भयो।  उहाको कल्याण होस।</p>
+                    </div>
+                </div>
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="{% static 'portfolio/images/sunita.jpg' %}" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">सुनिता राना</h4>
+                        <p class="para">उहा संग मैले मेरो भविष्य हेराए र पक्षि उहाले भनेको जस्तै ठ्याक्कै पर्यो।</p>
+                    </div>
+                </div>
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="{% static 'portfolio/images/subash.jpg' %}" alt="img1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">सुबाश तिमिल्सिना</h4>
+                        <p class="para">पहिला मेरो भैसीले दूध थोरै दिन थियो र पक्षि उहाले दिएको खिर भैसीलाई खुलाए पक्षि दूध धेरै दिन थालेको छ।</p>
+                    </div>
+                </div>
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="{% static 'portfolio/images/oldman.jpg' %}" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">हरि चापागाईं</h4>
+                        <p class="para">गुरुले मेरो भागी बिबाह मन्दिरमा गरिदिएको कारण आजको दिन सम्म मेरो र बुडीको सम्बन्द राम्रो ।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+{% endblock %}

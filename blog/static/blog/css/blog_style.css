@@ -1,0 +1,49 @@
+:root{
+    --roboto: 'Roboto', sans-serif;
+    --lato: 'Lato', sans-serif;
+}
+
+body .blogs{
+    padding-top: 1.5rem;
+}
+
+body .blogs .blockquote h1{
+    font: normal 500 40px/20px var(--roboto);
+    padding-bottom: 1rem;
+}
+
+body .blogs .blockquote h2{
+    font: normal 200 25px/30px var(--lato);
+}
+
+body .blogs ul .title-heading{
+    font: normal 500 40px/40px var(--roboto);
+    color: #FC2F02;
+}
+
+body .blogs ul li h3{
+    color: #BDB9B8;
+}
+
+body .blogs ul p{
+    padding: 0.5rem 0;
+}
+
+body .blog-detail{
+    padding-top: 1.5rem;
+}
+
+body .blog-detail h1{
+    font: normal 500 40px/40px var(--roboto);
+    color: #FC2F02;
+    padding-top: 0.5rem;
+}
+
+body .blog-detail h2{
+    font: normal 100 20px var(--roboto);
+    color: #ACA7A5;
+}
+
+body .blog-detail h3{
+    font: normal 350 25px/38px var(--roboto);
+}

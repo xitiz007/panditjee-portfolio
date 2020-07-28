@@ -1,0 +1,24 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container contact-details">
+    <div class="blockquote text-center contact-heading">
+        सम्पर्क / ठेगाना
+    </div>
+    <div class="card container" style="width: 18rem;">
+        <img src="{% static 'portfolio/images/bibek-pandit.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">बिबेक पण्डित</h5>
+            <p class="card-text">ज्योतिष विज्ञ / कम्प्युटर ईन्जिनियर</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">फोन नम्बर: <a href="#">९८४६७०८९३०</a></li>
+            <li class="list-group-item">ईमेल: <a href="#">bibekpandit@hariom.com</a></li>
+            <li class="list-group-item">ठेगाना: <a href="#">सिमौलचौर, पोखरा</a></li>
+        </ul>
+        <div class="card-body">
+            <a href="https://goo.gl/maps/YaMRtX3hRzzGo37i8" target="_blank" class="card-link">नक्शामा हेर्नुहोस्</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

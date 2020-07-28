@@ -1,0 +1,234 @@
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --lato: 'Lato', sans-serif;
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+body {
+    font: normal var(--roboto);
+}
+
+header.header_area {
+    margin-bottom: 6rem;
+}
+
+
+/* Buttons */
+
+.button {
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+header .navbar {
+    padding: 1rem;
+}
+
+header .navbar .nav-item .nav-link {
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+footer.footer-area {
+    background: #F8F8F8;
+    padding: 2rem 0;
+}
+
+footer.footer-area .container .social {
+    margin-bottom: 2rem;
+}
+
+footer.footer-area .container .social h5 {
+    font: normal 200 23px/25px var(--roboto);
+    margin-bottom: 1rem;
+}
+
+footer.footer-area .container .social a {
+    padding-right: 1rem;
+}
+
+footer.footer-area .container .social a img {
+    width: 50px;
+}
+
+footer.footer-area .container .copyrights .para {
+    margin-bottom: -1rem;
+    font: normal 150 15px/25px var(--lato);
+}
+
+
+/* banner area */
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 10%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1 {
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image img {
+    padding: 2rem 0;
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* about area */
+
+.site-main .about-area {
+    padding: 0.5rem;
+}
+
+.site-main .about-area .about-title h2 span {
+    display: block;
+    font: normal bold 49px/60px;
+    font-weight: 550;
+}
+
+.site-main .about-area .about-title .paragraph p {
+    padding: .1rem 0;
+    line-height: 1.5rem;
+}
+
+
+/* services area */
+
+.site-main .services-area {
+    padding: 2rem 1rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 1rem;
+}
+
+.site-main .services-area .services-title h1 {
+    font-size: 35px;
+}
+
+.site-main .services-area .services-title .para {
+    line-height: 1.5rem;
+}
+
+.site-main .services-area .services {
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 2rem 0;
+    transition: box-shadow .7s ease;
+}
+
+.site-main .services-area .services:hover {
+    box-shadow: var(--box-shadow);
+}
+
+
+/* client area */
+
+.site-main .about-area .about-title p {
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+}
+
+.site-main .about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    width: 300px;
+}
+
+.site-main .about-area .client .about-client {
+    padding-top: 0.5rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p {
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}

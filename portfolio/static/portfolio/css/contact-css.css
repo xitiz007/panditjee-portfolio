@@ -1,0 +1,13 @@
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --lato: 'Lato', sans-serif;
+}
+
+body .contact-details{
+    padding: 2rem 0;
+}
+
+body .contact-details .contact-heading{
+    font: normal 500 30px/20px var(--roboto);
+    padding-bottom: 0.5rem;
+}

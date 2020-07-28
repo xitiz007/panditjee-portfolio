@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek's Portfolio</title>
+    <link rel="stylesheet" href="{% static 'portfolio/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'portfolio/css/base_style.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/blog_style.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/contact-css.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'portfolio/images/face.png' %}">
+</head>
+
+<body>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'portfolio/images/logo.png' %}" alt="logo" id="logo" width="150px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'home' %}">होम<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#intro">परिचय</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">सेवाहरु</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">ग्राहकको प्रतिक्रिया</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'blog:all_blog' %}">ब्लग</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% static 'portfolio/resume/Resume.pdf' %}" target="_blank">बायो डाटा</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact-detail' %}">सम्पर्क/ठेगाना</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %} 
+    {% endblock %}
+
+    <footer class="footer-area">
+        <div class="container">
+            <div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me on</h5>
+                    <a href="https://www.facebook.com/bibek.pandit.37" target="_blank"><img src="{% static 'portfolio/images/facebook.png' %}" alt="facebook"></a>
+                    <a href="https://www.instagram.com/bibekpandit796/" target="_blank"><img src="{% static 'portfolio/images/instagram.png' %}" alt="instagram"></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright &#169;2020 All rights reserved | This template is made with by <a href="#"><span>Pandit
+                Jee</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="{% static 'portfolio/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'portfolio/js/main.js' %}"></script>
+</body>
+
+</html>
